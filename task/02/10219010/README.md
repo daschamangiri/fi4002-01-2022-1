@@ -1,20 +1,26 @@
-# 1021XABC
-NamaLengkap
+# 10219010
+Dascha Gularni Purnawulan
 
 
 ## materi sebelumnya
-+ Tuliskan materi-materi sebelumnya yang telah diberikan dalam kuliah ini.
++ Euler
++ Runge - Kutta
++ Predator Prey
++ Monte Carlo
++ Sistem Bandul dan Pegas
++ Discrete Fourier Transform (DFT) to Fast Fourier Transform (FFT)
++ Lorentz
 
 
 ## materi paling menarik
-+ Tuliskan materi yang paling menarik yang telah diberikan dan jelaskan mengapa menarik.
++ Materi yang paling menarik adalah metode Runge-Kutta orde 4 karena saya baru pertama kali belajar materi tersebut. Selain itu, berdasarkan ekspansi fungsi dari Deret Taylor, Metode Runge-Kutta orde 4 memiliki galat pemotongan yang minimum sehingga menghasilkan solusi yang baik.
 
 
 ## materi paling membosankan
-+ Tuliskan materi yang telah diberikan yang paling membosankan dan jelaskan alasannya.
++ Sistem bandul dan pegas karena memiliki banyak kemungkinan yang terjadi sehingga banyak yang harus dipelajari
 
 
-## materi yang sudah dipami
+## materi yang sudah dipahami
 + Tuliskan materi-materi yang telah dipahami.
 
 
