@@ -21,33 +21,65 @@ Dascha Gularni Purnawulan
 
 
 ## materi yang sudah dipahami
-+ Tuliskan materi-materi yang telah dipahami.
++ Monte Carlo karena memiliki pemahaman codingan yang sederhana.
 
 
 ## materi yang belum dipahami
-+ Tuliskan materi-materi yang masih belum dipahami dan bagian mana yang belum serta ingin dipahami.
++ Sistem bandul dan pegas karena saya belum terlalu mengerti pemahaman codingannya.
 
 
 ## contoh program
-+ Buat suatu contoh program dalam Python dan sertakan di sini dengan hasil keluarnnya.
 
 ```python
 # contoh program python
+import matplotlib.pyplot as plt
+import random 
+
+inside = 0 
+n = 1000
+
+x_inside=[]
+y_inside=[]
+x_outside=[]
+y_outside=[]
+
+for _ in range(n):
+    x=random.uniform(0.0,2.0)
+    y=random.uniform(0.0,4.0)
+    if y<=x**2:
+        inside+=1
+        x_inside.append(x)
+        y_inside.append(y)
+    else:
+        x_outside.append(x)
+        y_outside.append(y)
+
+Luas=8*inside/n
+print(Luas)
+        
+fig, ax=plt.subplots()
+ax.set_aspect('equal')
+ax.scatter(x_inside, y_inside, color='g', marker='s')
+ax.scatter(x_outside, y_outside, color='r', marker='s')
+
+plt.draw()
 ```
 
 Hasilnya adalah
+
+![image](https://user-images.githubusercontent.com/112105008/198960182-2378a456-4316-4d67-84c0-d2100279adc0.png)
 
 ```
 ```
 
 
 ## cara perkuliahan
-+ Tuliskan pendapat Anda mengenai cara perkuliahan selama ini dan cantumkan usulan untuk perkuliahan setelah UTS.
++ Menurut saya perkuliahan selama ini sudah cukup baik dan mudah dimengerti karena diberi pr setiap minggu sehingga kami mampu mengulik dan memahaminya lebih dalam lagi.
 
 
 ## topik sistem fisis
-+ Tuliskan sistem fisis yang menarik bagi Anda untuk dikaji lebih dalam dan jelaskan alasannya mengapa.
++ Menurut saya sistem fisis yang menarik adalah osilasi, meskipun saya belum terlalu paham codingannya. Sistem fisis tersebut menarik karena menggunakan persamaan Runge-kutta
 
 
 ## simulasi dan visualisasi
-+ Apakah Anda tertarik dengan simulasi dan visualisasi? Jelaskan topik yang ingin Anda simulasikan / visualisasikan serta cantumkan alasannya dan perkiraan pusataka Python yang perlu digunakan.
++ Topik yang ingin saya simulasikan adalah Monte Carlo karena pemahaman codingannya cukup mudah. Pustaka atau library python yang digunakan adalah matplotlib.pyplot. Pustaka tersebut bertujuan menampilkan plot grafik dan menggunakan random untuk menampilkan angka yang acak pada input yang digunakan.
